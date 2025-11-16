@@ -25,9 +25,9 @@ class AuthController extends Controller
             'password' => $request->input('password'),
         ];
         if (Auth::attempt($credentials)) {
-            return redirect()->route('home');
+            return redirect()->route('home')->with('success', 'Login feito com sucesso!');
         } else {
-            return redirect()->route('login');
+            return redirect()->route('login')->with('error', 'Credenciais inválidos. Tente novamente.');
         }
     }
 

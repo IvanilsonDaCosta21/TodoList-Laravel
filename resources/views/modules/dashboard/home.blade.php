@@ -8,6 +8,12 @@
                 <p>Esta é a página inicial do seu dashboard.</p>
             </div>
             <hr>
+            @if ($message = Session::get('success'))
+                <div class="alert alert-success">
+                    {{ $message }}
+                </div>
+            @endif
+
             <div class="col-md-6">
                 <div class="card mb-3">
                     <div class="card-header">
