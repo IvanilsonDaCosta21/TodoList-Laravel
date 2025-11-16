@@ -30,7 +30,7 @@ Tecnologias utilizadas
 1 Instalação
 Clone o repositório:
 
-git clone https://github.com/SEU-USUARIO/NOME-DO-REPO.git
+git clone (https://github.com/IvanilsonDaCosta21/TodoList-Laravel.git)
 
 
 2 Entre na pasta do projeto:
